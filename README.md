@@ -22,3 +22,13 @@ COPY --from=builder /usr/src/app/main .
 CMD [ "./main" ]
 ```
 na primeira fase ele compila o arquivo GO, na segunda ele executa.
+
+
+## Execução
+
+Para executar a imagem, basta baixa-la do DockerHUB e executar
+```bash
+docker pull mtspac/fullcycle  # Dowload da imagem
+
+docker run mtspac/fullcycle   # Execução da imagem
+```
